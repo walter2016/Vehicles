@@ -19,6 +19,8 @@ namespace Vehicles.API.Helpers
 
         Task<bool> IsUserInRoleAsync(User user, string roleName);
 
+        Task<SignInResult> LoginAsync(LoginViewModel model);
 
+        Task LogoutAsync();
     }
 }
